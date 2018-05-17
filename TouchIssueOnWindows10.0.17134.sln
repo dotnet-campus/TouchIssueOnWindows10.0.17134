@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheWPFCoveringWindow", "TheWPFCoveringWindow\TheWPFCoveringWindow.csproj", "{265B95C3-1E9D-470F-B461-BD6CF5B9C1A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheAppToInvestigateWhatHappened", "TheAppToInvestigateWhatHappened\TheAppToInvestigateWhatHappened.csproj", "{36DBBD67-737A-477D-8EDF-61C6B73B38FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{265B95C3-1E9D-470F-B461-BD6CF5B9C1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{265B95C3-1E9D-470F-B461-BD6CF5B9C1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{265B95C3-1E9D-470F-B461-BD6CF5B9C1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36DBBD67-737A-477D-8EDF-61C6B73B38FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36DBBD67-737A-477D-8EDF-61C6B73B38FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36DBBD67-737A-477D-8EDF-61C6B73B38FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36DBBD67-737A-477D-8EDF-61C6B73B38FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
