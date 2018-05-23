@@ -30,3 +30,31 @@ But the breakpoint never reached until I closed the transparent WPF window which
 I pushed the very simple code to GitHub: [dotnet-campus/TouchIssueOnWindows10.0.17134](https://github.com/dotnet-campus/TouchIssueOnWindows10.0.17134). Cloning it might help a little.
 
 Why does this happen and how to solve it?
+
+## Solution
+
+If you have a Window that set the following properties.
+
+```csharp
+            WindowStyle = WindowStyle.None;
+            WindowState = WindowState.Maximized;
+```
+
+Or
+
+```csharp
+            WindowStyle="None" 
+            AllowsTransparency="True"
+```
+
+You must set `ResizeMode="NoResize"` to avoid some problems as 
+
+ - All applications lost touch or stylus if a WPF transparent window covers on them.
+
+ - Windows appears offset when set it to `Maximized` from `Normal`.
+
+ - Windows appears offset when switch screen.
+
+See [c# - On Windows 10 (1803), all applications lost touch or stylus if a WPF transparent window covers on them](https://stackoverflow.com/questions/50382605/on-windows-10-1803-all-applications-lost-touch-or-stylus-if-a-wpf-transparent )
+
+[On Windows 10 (1803), all applications lost touch or stylus if a WPF transparent window covers on them - Developer Community](https://developercommunity.visualstudio.com/content/problem/255063/on-windows-10-1803-all-applications-lost-touch-or.html )
